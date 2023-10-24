@@ -4,7 +4,8 @@ import ControllerLayouts from '@/components/ControllerLayouts.vue'
 import DesktopHeader from '@/components/Header/DesktopHeader.vue'
 import MobileHeader from '@/components/Header/MobileHeader.vue'
 
-import CarouselHighlights from '@/components/Carousel/CarouselHighlights.vue'
+import DesktopCarouselHighlights from '../components/Carousel/CarouselHighlightsDesktop.vue'
+import MobileCarouselHighlights from '../components/Carousel/CarouselHighlightsMobile.vue'
 </script>
 
 <template>
@@ -12,7 +13,10 @@ import CarouselHighlights from '@/components/Carousel/CarouselHighlights.vue'
     <ControllerLayouts :desktopComponent="DesktopHeader" :mobileComponent="MobileHeader" />
   </header>
   <main>
-    <CarouselHighlights />
+    <ControllerLayouts
+      :desktopComponent="DesktopCarouselHighlights"
+      :mobileComponent="MobileCarouselHighlights"
+    />
   </main>
 </template>
 

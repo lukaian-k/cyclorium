@@ -1,5 +1,5 @@
 <script setup>
-import { ref, onMounted, onUnmounted, defineProps } from 'vue'
+import { ref, onMounted, onUnmounted } from 'vue'
 
 const props = defineProps({
   desktopComponent: {
@@ -12,7 +12,7 @@ const props = defineProps({
   },
   breakpoint: {
     type: Number,
-    default: 768
+    default: 1024
   }
 })
 

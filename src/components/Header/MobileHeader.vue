@@ -30,7 +30,7 @@ function toggleMenu() {
           </RouterLink>
         </div>
 
-        <font-awesome-icon @click="toggleMenu" :icon="faBars" size="2x" />
+        <font-awesome-icon class="button" @click="toggleMenu" :icon="faBars" size="2x" />
       </span>
     </nav>
   </header>
@@ -42,6 +42,8 @@ nav {
   position: fixed;
   top: 0;
   margin-top: 1.2em;
+
+  z-index: 100;
 }
 
 header img {
@@ -58,7 +60,15 @@ nav span {
 
 .mobile-menu {
   display: none;
-  padding-right: 25px;
+
+  background-color: var(--color-background);
+  border-radius: 5%;
+
+  padding: 0.7em;
+}
+
+.button {
+  padding-left: 10px;
 }
 
 .mobile-menu.active {

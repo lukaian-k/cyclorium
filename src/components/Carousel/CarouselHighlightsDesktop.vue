@@ -1,16 +1,16 @@
 <script setup>
 import { reactive } from 'vue'
 
-import Slide1 from './PagesCarousel/ScheduleMaintenanceCarousel.vue'
-import Slide2 from './PagesCarousel/ScheduleMountCarousel.vue'
-import Slide3 from './PagesCarousel/ScheduleConsultingCarousel.vue'
+import Slide1Desktop from './PagesCarousel/Desktop/ScheduleMaintenanceCarouselDesktop.vue'
+import Slide2Desktop from './PagesCarousel/Desktop/ScheduleMountCarouselDesktop.vue'
+import Slide3Desktop from './PagesCarousel/Desktop/ScheduleConsultingCarouselDesktop.vue'
 
 let state = reactive({
   currentSlide: 0,
   timer: null
 })
 
-const slides = [Slide1, Slide2, Slide3]
+const slides = [Slide1Desktop, Slide2Desktop, Slide3Desktop]
 
 function goToSlide(index) {
   state.currentSlide = index
