@@ -1,11 +1,15 @@
 <script setup>
-import HeaderController from '@/components/Header/ControllerHeader.vue'
+import ControllerLayouts from '@/components/ControllerLayouts.vue'
+
+import DesktopHeader from '@/components/Header/DesktopHeader.vue'
+import MobileHeader from '@/components/Header/MobileHeader.vue'
+
 import CarouselHighlights from '@/components/Carousel/CarouselHighlights.vue'
 </script>
 
 <template>
   <header>
-    <HeaderController />
+    <ControllerLayouts :desktopComponent="DesktopHeader" :mobileComponent="MobileHeader" />
   </header>
   <main>
     <CarouselHighlights />
