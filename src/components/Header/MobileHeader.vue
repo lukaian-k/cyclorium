@@ -30,7 +30,7 @@ function toggleMenu() {
           </RouterLink>
         </div>
 
-        <font-awesome-icon class="button" @click="toggleMenu" :icon="faBars" size="2x" />
+        <FontAwesomeIcon class="button" @click="toggleMenu" :icon="faBars" size="2x" />
       </span>
     </nav>
   </header>

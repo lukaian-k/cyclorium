@@ -66,6 +66,7 @@ startAutoSlide()
   justify-content: center;
 
   margin-top: 10px;
+  z-index: 1;
 }
 
 .indicator {

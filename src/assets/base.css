@@ -29,8 +29,8 @@
 
   /* action */
   --warning: #8f6c0e;
-  --shade-5: #8f2a0e;
-  --shade-5: #078f66;
+  --error: #8f2a0e;
+  --ok: #078f66;
 }
 
 /* semantic color variables for this project */

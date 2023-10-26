@@ -4,25 +4,33 @@ import ControllerLayouts from '@/components/ControllerLayouts.vue'
 import DesktopHeader from '@/components/Header/DesktopHeader.vue'
 import MobileHeader from '@/components/Header/MobileHeader.vue'
 
-import DesktopCarouselHighlights from '../components/Carousel/CarouselHighlightsDesktop.vue'
-import MobileCarouselHighlights from '../components/Carousel/CarouselHighlightsMobile.vue'
+import DesktopCarouselHighlights from '@/components/Carousel/CarouselHighlightsDesktop.vue'
+import MobileCarouselHighlights from '@/components/Carousel/CarouselHighlightsMobile.vue'
+
+import OurServices from '@/components/OurServices/OurServicesView.vue'
 </script>
 
 <template>
   <header>
-    <ControllerLayouts :desktopComponent="DesktopHeader" :mobileComponent="MobileHeader" />
+    <ControllerLayouts
+      class="bg-secondary"
+      :desktopComponent="DesktopHeader"
+      :mobileComponent="MobileHeader"
+    />
   </header>
   <main>
     <ControllerLayouts
+      class="bg-secondary"
       :desktopComponent="DesktopCarouselHighlights"
       :mobileComponent="MobileCarouselHighlights"
     />
+
+    <OurServices />
   </main>
 </template>
 
 <style scoped>
-header,
-main {
+.bg-secondary {
   background-color: var(--color-background-secondary);
   padding: 0 var(--section-gap);
 }
