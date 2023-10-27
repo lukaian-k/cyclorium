@@ -9,6 +9,7 @@ import MobileCarouselHighlights from '@/components/Carousel/CarouselHighlightsMo
 
 import OurServices from '@/components/OurServices/OurServicesView.vue'
 import AboutUs from '@/components/AboutUs.vue'
+import ContactUs from '../components/ContactUs.vue'
 </script>
 
 <template>
@@ -28,6 +29,7 @@ import AboutUs from '@/components/AboutUs.vue'
 
     <OurServices />
     <AboutUs />
+    <ContactUs />
   </main>
 </template>
 
