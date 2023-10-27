@@ -8,6 +8,7 @@ import DesktopCarouselHighlights from '@/components/Carousel/CarouselHighlightsD
 import MobileCarouselHighlights from '@/components/Carousel/CarouselHighlightsMobile.vue'
 
 import OurServices from '@/components/OurServices/OurServicesView.vue'
+import AboutUs from '@/components/AboutUs.vue'
 </script>
 
 <template>
@@ -26,6 +27,7 @@ import OurServices from '@/components/OurServices/OurServicesView.vue'
     />
 
     <OurServices />
+    <AboutUs />
   </main>
 </template>
 

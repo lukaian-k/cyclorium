@@ -9,7 +9,7 @@
     </div>
 
     <div class="image">
-      <img src="@/assets/Illustration-maintenance.svg" alt="Imagem" height="300" />
+      <img src="@/assets/img-carousel/Illustration-maintenance.svg" alt="Imagem" height="300" />
     </div>
 
     <div class="footer">

@@ -13,7 +13,7 @@
     </div>
 
     <div class="right-side">
-      <img src="@/assets/Illustration-maintenance.svg" alt="Imagem" />
+      <img src="@/assets/img-carousel/Illustration-maintenance.svg" alt="Imagem" />
     </div>
   </div>
 </template>

@@ -13,7 +13,7 @@
     </div>
 
     <div class="right-side">
-      <img src="@/assets/Illustration-mounting.svg" alt="Imagem" height="458" />
+      <img src="@/assets/img-carousel/Illustration-mounting.svg" alt="Imagem" height="458" />
     </div>
   </div>
 </template>

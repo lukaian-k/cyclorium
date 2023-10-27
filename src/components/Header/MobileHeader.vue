@@ -19,7 +19,7 @@ function toggleMenu() {
 <template>
   <header>
     <RouterLink to="/" aria-label="Página Inicial">
-      <img src="@/assets/logo.svg" alt="Home" width="40" />
+      <img src="@/assets/logo/icon.svg" alt="Home" width="40" />
     </RouterLink>
 
     <nav>

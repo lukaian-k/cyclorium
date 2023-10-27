@@ -9,7 +9,7 @@ import sections from './sections.json'
     <div class="header-content">
       <RouterLink to="/" aria-label="Página Inicial">
         <div class="logo">
-          <img src="@/assets/logo.svg" alt="Home" width="100" />
+          <img src="@/assets/logo/icon.svg" alt="Home" width="100" />
         </div>
       </RouterLink>
 
