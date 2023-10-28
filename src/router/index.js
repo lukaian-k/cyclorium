@@ -4,6 +4,7 @@ import FullLayout from '@/layouts/LayoutsFull.vue'
 import BlankLayout from '@/layouts/LayoutsBlank.vue'
 
 import HomeView from '@/views/HomeView.vue'
+import ServiceAssemblyBicycles from '@/views/ServiceAssemblyBicycles.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -21,7 +22,14 @@ const router = createRouter({
     },
     {
       path: '/',
-      component: BlankLayout
+      component: BlankLayout,
+      children: [
+        {
+          path: '/montagem',
+          name: 'Mounting',
+          component: ServiceAssemblyBicycles
+        }
+      ]
     }
   ]
 })

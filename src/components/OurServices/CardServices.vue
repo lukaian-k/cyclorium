@@ -1,4 +1,6 @@
 <script setup>
+import { RouterLink } from 'vue-router'
+
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
 import { faArrowRight } from '@fortawesome/free-solid-svg-icons'
 
@@ -14,6 +16,10 @@ defineProps({
   icon: {
     type: Number,
     required: true
+  },
+  to: {
+    type: String,
+    required: true
   }
 })
 </script>
@@ -28,10 +34,13 @@ defineProps({
       </span>
       <h3>{{ title }}</h3>
       <p>{{ description }}</p>
-      <button>
-        Saiba Mais
-        <FontAwesomeIcon :icon="faArrowRight" />
-      </button>
+
+      <RouterLink :to="to">
+        <button>
+          Saiba Mais
+          <FontAwesomeIcon :icon="faArrowRight" />
+        </button>
+      </RouterLink>
     </div>
   </div>
 </template>

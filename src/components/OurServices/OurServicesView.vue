@@ -5,18 +5,21 @@ const InfoCardsServices = [
   {
     title: 'Montagem de Bicicletas',
     description: 'Montagem especializada de bicicletas para garantir sua prontidão para a estrada.',
-    icon: 0
+    icon: 0,
+    to: '/montagem'
   },
   {
     title: 'Manutenções de Bicicletas',
     description: 'Manutenção profissional para sua bicicleta, garantindo passeios seguros.',
-    icon: 1
+    icon: 1,
+    to: '/manutencao'
   },
   {
-    title: 'Consutorias',
+    title: 'Consultorias',
     description:
       'Nossa consultoria ajuda você a encontrar a bicicleta perfeita ou as peças ideais para suas necessidades',
-    icon: 2
+    icon: 2,
+    to: '/consultoria'
   }
 ]
 </script>
@@ -35,7 +38,12 @@ const InfoCardsServices = [
     <div class="row">
       <div class="col" v-for="info in InfoCardsServices" :title="info.title" :key="info.title">
         <div class="component">
-          <CardServices :title="info.title" :description="info.description" :icon="info.icon" />
+          <CardServices
+            :title="info.title"
+            :description="info.description"
+            :icon="info.icon"
+            :to="info.to"
+          />
         </div>
       </div>
     </div>
