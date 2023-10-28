@@ -17,8 +17,12 @@ import { faWhatsapp, faInstagram } from '@fortawesome/free-brands-svg-icons'
         </p>
       </div>
       <div class="row-icons">
-        <FontAwesomeIcon class="icon" :icon="faWhatsapp" size="2x" />
-        <FontAwesomeIcon class="icon" :icon="faInstagram" size="2x" />
+        <a href="https://api.whatsapp.com/send?phone=5588996667930" target="_blank">
+          <FontAwesomeIcon class="icon" :icon="faWhatsapp" size="2x" />
+        </a>
+        <a href="https://www.instagram.com/emeson.sousa.lima/" target="_blank">
+          <FontAwesomeIcon class="icon" :icon="faInstagram" size="2x" />
+        </a>
       </div>
       <button>Pergunte ao Bot</button>
     </div>
@@ -79,6 +83,11 @@ p {
   font-size: 14px;
   font-weight: 400;
   line-height: 20px;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
 }
 
 button {

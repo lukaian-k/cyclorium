@@ -5,7 +5,7 @@ import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
 import { faArrowRight } from '@fortawesome/free-solid-svg-icons'
 
 function openWhatsApp() {
-  const phoneNumber = '88996667930'
+  const phoneNumber = '5588996667930'
   const message =
     'Olá, estou interessado no serviço de montagem. Gostaria de obter mais informações!'
 
@@ -16,8 +16,8 @@ function openWhatsApp() {
 }
 
 function openInstagramChat() {
-  const username = '100404404691288'
-  const url = `https://www.instagram.com/direct/t/${username}/`
+  const username = 'emeson.sousa.lima'
+  const url = `https://www.instagram.com/${username}/`
 
   window.open(url, '_blank')
 }
@@ -50,7 +50,7 @@ function openInstagramChat() {
           <a @click="openWhatsApp"> (88) 9-9666-7930 </a>
         </p>
         <button class="whatsapp-button" @click="openWhatsApp">WhatsApp</button>
-        <button class="instagram-button" @click="openInstagramChat">Chat do Instagram</button>
+        <button class="instagram-button" @click="openInstagramChat">Instagram</button>
       </div>
     </div>
 

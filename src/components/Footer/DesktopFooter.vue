@@ -1,4 +1,6 @@
 <script setup>
+import { RouterLink } from 'vue-router'
+
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
 import { faWhatsapp, faInstagram, faFacebook, faYoutube } from '@fortawesome/free-brands-svg-icons'
 </script>
@@ -8,7 +10,9 @@ import { faWhatsapp, faInstagram, faFacebook, faYoutube } from '@fortawesome/fre
     <div class="footer-content">
       <div class="left-content">
         <div class="logo">
-          <img src="@/assets/logo/full-white.svg" alt="Logo do site" />
+          <RouterLink to="/">
+            <img src="@/assets/logo/full-white.svg" alt="Logo do site" />
+          </RouterLink>
         </div>
         <p>
           Copyright © 2023 developed by
@@ -17,10 +21,18 @@ import { faWhatsapp, faInstagram, faFacebook, faYoutube } from '@fortawesome/fre
           </a>
         </p>
         <div class="social-icons">
-          <FontAwesomeIcon class="icon" :icon="faWhatsapp" />
-          <FontAwesomeIcon class="icon" :icon="faInstagram" />
-          <FontAwesomeIcon class="icon" :icon="faFacebook" />
-          <FontAwesomeIcon class="icon" :icon="faYoutube" />
+          <a href="https://api.whatsapp.com/send?phone=5588996667930" target="_blank">
+            <FontAwesomeIcon class="icon" :icon="faWhatsapp" />
+          </a>
+          <a href="https://www.instagram.com/emeson.sousa.lima/" target="_blank">
+            <FontAwesomeIcon class="icon" :icon="faInstagram" />
+          </a>
+          <a href="" target="_blank">
+            <FontAwesomeIcon class="icon" :icon="faFacebook" />
+          </a>
+          <a href="" target="_blank">
+            <FontAwesomeIcon class="icon" :icon="faYoutube" />
+          </a>
         </div>
       </div>
       <div class="right-content">
@@ -119,12 +131,17 @@ li {
   margin-top: 5px;
 }
 
-a {
+.right-content a {
   color: var(--silver);
 
   font-size: 14px;
   font-weight: 400;
   line-height: 20px;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
 }
 
 .partners img {
