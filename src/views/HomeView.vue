@@ -9,11 +9,14 @@ import MobileCarouselHighlights from '@/components/Carousel/CarouselHighlightsMo
 
 import OurServices from '@/components/OurServices/OurServicesView.vue'
 import AboutUs from '@/components/AboutUs.vue'
-import ContactUs from '../components/ContactUs.vue'
+import ContactUs from '@/components/ContactUs.vue'
+
+import DesktopFooter from '@/components/Footer/DesktopFooter.vue'
+import MobileFooter from '@/components/Footer/MobileFooter.vue'
 </script>
 
 <template>
-  <header>
+  <header id="home">
     <ControllerLayouts
       class="bg-secondary"
       :desktopComponent="DesktopHeader"
@@ -27,10 +30,14 @@ import ContactUs from '../components/ContactUs.vue'
       :mobileComponent="MobileCarouselHighlights"
     />
 
-    <OurServices />
-    <AboutUs />
-    <ContactUs />
+    <OurServices id="services" />
+    <AboutUs id="about-us" />
+    <ContactUs id="contact" />
   </main>
+
+  <footer>
+    <ControllerLayouts :desktopComponent="DesktopFooter" :mobileComponent="MobileFooter" />
+  </footer>
 </template>
 
 <style scoped>

@@ -1,18 +1,18 @@
 [
   {
-    "to": "/",
+    "to": "#home",
     "name": "Início"
   },
   {
-    "to": "/servicos",
+    "to": "#services",
     "name": "Serviços"
   },
   {
-    "to": "/sobre-nos",
+    "to": "#about-us",
     "name": "Sobre Nós"
   },
   {
-    "to": "/contato",
+    "to": "#contact",
     "name": "Contato"
   }
 ]

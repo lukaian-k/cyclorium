@@ -25,9 +25,9 @@ function toggleMenu() {
     <nav>
       <span>
         <div class="mobile-menu" :class="{ active: state.showMenu }">
-          <RouterLink class="item-list" v-for="item in sections" :to="item.to" :key="item.to">
+          <a class="item-list" v-for="item in sections" :href="item.to" :key="item.to">
             <p>{{ item.name }}</p>
-          </RouterLink>
+          </a>
         </div>
 
         <FontAwesomeIcon class="button" @click="toggleMenu" :icon="faBars" size="2x" />
