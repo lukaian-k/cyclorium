@@ -106,6 +106,10 @@ footer {
   line-height: 28px;
 }
 
+.column a {
+  text-decoration: none;
+}
+
 ul {
   list-style: none;
   padding: 0;
@@ -116,7 +120,6 @@ li {
 }
 
 a {
-  text-decoration: none;
   color: var(--silver);
 
   font-size: 14px;
