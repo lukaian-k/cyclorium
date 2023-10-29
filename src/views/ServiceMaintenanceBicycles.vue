@@ -19,7 +19,7 @@ const numberFormat = ref(formatNumber(data.number))
 function openWhatsApp() {
   const phoneNumber = data.number
   const message =
-    'Olá, estou interessado no serviço de montagem. Gostaria de obter mais informações!'
+    'Olá, estou interessado no serviço de manutenção. Gostaria de obter mais informações!'
 
   const url = `https://api.whatsapp.com/send?phone=${phoneNumber}&text=${encodeURIComponent(
     message
@@ -39,21 +39,22 @@ function openInstagramChat() {
   <div class="landing-page">
     <img
       class="landing-image"
-      src="@/assets/icons-services/assembly-bicycles.svg"
+      src="@/assets/icons-services/maintenance-bicycles.svg"
       alt="Imagem Montagem de Bicicletas"
     />
 
     <div class="landing-content">
-      <h1 class="landing-title">Montagem de Bicicletas</h1>
+      <h1 class="landing-title">Manutenções de Bicicletas</h1>
       <p class="landing-description">
-        Realizamos uma montagem especializada de bicicletas, cuidadosamente executada para assegurar
-        que sua bicicleta esteja totalmente pronta para encarar as estradas. Nossa atenção
-        meticulosa aos detalhes e profissionalismo garantem que cada componente da bicicleta esteja
-        ajustado e alinhado da melhor maneira possível, resultando em um desempenho superior e uma
-        experiência de pedal suave. Seja você um ciclista recreativo, um entusiasta de aventuras ao
-        ar livre ou um competidor sério, nossa montagem especializada proporciona a tranquilidade de
-        saber que sua bicicleta está em perfeitas condições para enfrentar qualquer desafio na
-        estrada.
+        Oferecemos serviços de manutenção profissional para sua bicicleta, visando assegurar
+        passeios seguros e livres de problemas. Nossa equipe altamente qualificada e experiente está
+        comprometida em cuidar minuciosamente de todos os aspectos técnicos da sua bicicleta, desde
+        a lubrificação adequada e ajustes de marchas até a verificação minuciosa de freios e pneus.
+        Com nossa atenção meticulosa aos detalhes e uso das melhores práticas da indústria,
+        garantimos que sua bicicleta funcione com eficiência e confiabilidade, permitindo que você
+        desfrute de cada pedalada com tranquilidade e segurança. Não importa se você é um ciclista
+        ocasional ou um entusiasta dedicado, nossa manutenção profissional ajuda a prolongar a vida
+        útil da sua bicicleta, mantendo-a em condições ótimas para aventuras na estrada e trilhas.
       </p>
 
       <div class="contact-info">
@@ -167,7 +168,7 @@ function openInstagramChat() {
 
 @media (max-width: 1024px) {
   .landing-image {
-    max-width: 50%;
+    max-width: 70%;
   }
 
   .landing-title {

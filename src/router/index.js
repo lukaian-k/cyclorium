@@ -5,6 +5,7 @@ import BlankLayout from '@/layouts/LayoutsBlank.vue'
 
 import HomeView from '@/views/HomeView.vue'
 import ServiceAssemblyBicycles from '@/views/ServiceAssemblyBicycles.vue'
+import ServiceMaintenanceBicycles from '@/views/ServiceMaintenanceBicycles.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -28,6 +29,11 @@ const router = createRouter({
           path: '/montagem',
           name: 'Mounting',
           component: ServiceAssemblyBicycles
+        },
+        {
+          path: '/manutencao',
+          name: 'Maintenance',
+          component: ServiceMaintenanceBicycles
         }
       ]
     }

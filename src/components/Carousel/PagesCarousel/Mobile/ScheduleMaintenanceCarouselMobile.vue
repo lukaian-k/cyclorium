@@ -1,3 +1,7 @@
+<script setup>
+import { RouterLink } from 'vue-router'
+</script>
+
 <template>
   <div class="container">
     <div class="header">
@@ -13,7 +17,9 @@
     </div>
 
     <div class="footer">
-      <button>Agendar Agora</button>
+      <RouterLink to="/manutencao">
+        <button>Agendar Agora</button>
+      </RouterLink>
     </div>
   </div>
 </template>
@@ -82,5 +88,9 @@ button {
   border-radius: 4px;
   border: none;
   cursor: pointer;
+}
+
+a {
+  text-decoration: none;
 }
 </style>
