@@ -1,4 +1,6 @@
-<script setup></script>
+<script setup>
+import { RouterLink } from 'vue-router'
+</script>
 
 <template>
   <div class="container">
@@ -9,7 +11,9 @@
       </h1>
       <p>Agende um horário conveniente para serviços de alta qualidade.</p>
 
-      <button>Agendar Agora</button>
+      <RouterLink to="/consultoria">
+        <button>Agendar Agora</button>
+      </RouterLink>
     </div>
 
     <div class="right-side">
@@ -69,5 +73,9 @@ button {
   border-radius: 4px;
   border: none;
   cursor: pointer;
+}
+
+a {
+  text-decoration: none;
 }
 </style>
