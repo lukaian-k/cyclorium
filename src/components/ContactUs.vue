@@ -1,6 +1,8 @@
 <script setup>
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
 import { faWhatsapp, faInstagram } from '@fortawesome/free-brands-svg-icons'
+
+import data from '@/assets/data.json'
 </script>
 
 <template>
@@ -17,10 +19,10 @@ import { faWhatsapp, faInstagram } from '@fortawesome/free-brands-svg-icons'
         </p>
       </div>
       <div class="row-icons">
-        <a href="https://api.whatsapp.com/send?phone=5588996667930" target="_blank">
+        <a :href="`https://api.whatsapp.com/send?phone=${data.number}`" target="_blank">
           <FontAwesomeIcon class="icon" :icon="faWhatsapp" size="2x" />
         </a>
-        <a href="https://www.instagram.com/emeson.sousa.lima/" target="_blank">
+        <a :href="`https://www.instagram.com/${data.usernameInstagram}`" target="_blank">
           <FontAwesomeIcon class="icon" :icon="faInstagram" size="2x" />
         </a>
       </div>

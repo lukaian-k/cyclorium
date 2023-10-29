@@ -5,7 +5,7 @@ import { ref } from 'vue'
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
 import { faArrowRight } from '@fortawesome/free-solid-svg-icons'
 
-import data from './data.json'
+import data from '@/assets/data.json'
 
 function formatNumber(number) {
   number = number.replace(/^55/, '')

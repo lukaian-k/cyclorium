@@ -3,6 +3,8 @@ import { RouterLink } from 'vue-router'
 
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
 import { faWhatsapp, faInstagram, faFacebook, faYoutube } from '@fortawesome/free-brands-svg-icons'
+
+import data from '@/assets/data.json'
 </script>
 
 <template>
@@ -16,15 +18,15 @@ import { faWhatsapp, faInstagram, faFacebook, faYoutube } from '@fortawesome/fre
         </div>
         <p>
           Copyright © 2023 developed by
-          <a href="https://beacons.ai/lukaian" target="_blank" style="color: var(--shade-2)">
-            lukaian
+          <a :href="data.developer.url" target="_blank" style="color: var(--shade-2)">
+            {{ data.developer.name }}
           </a>
         </p>
         <div class="social-icons">
-          <a href="https://api.whatsapp.com/send?phone=5588996667930" target="_blank">
+          <a :href="`https://api.whatsapp.com/send?phone=${data.number}`" target="_blank">
             <FontAwesomeIcon class="icon" :icon="faWhatsapp" />
           </a>
-          <a href="https://www.instagram.com/emeson.sousa.lima/" target="_blank">
+          <a :href="`https://www.instagram.com/${data.usernameInstagram}`" target="_blank">
             <FontAwesomeIcon class="icon" :icon="faInstagram" />
           </a>
           <a href="" target="_blank">
